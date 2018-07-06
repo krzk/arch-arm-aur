@@ -4,14 +4,14 @@ buildarch=28
 
 pkgbase='wiringx-git'
 pkgname=('wiringx-git' 'python-wiringx-git' 'python2-wiringx-git')
-pkgver=r224.ef1c4a4
+pkgver=r240.4e620afa05a5
 pkgrel=1
 pkgdesc="wiringX is a modular GPIO interface, derived from wiringPi"
-arch=('arm')
+arch=('arm' 'aarch64')
 url="http://wiringx.org"
 license=('GPL')
 makedepends=('git' 'cmake' 'sed' 'python-setuptools' 'python2-setuptools')
-source=(${pkgname}::git+https://github.com/wiringX/wiringX#branch=rewrite)
+source=(${pkgname}::git+https://github.com/wiringX/wiringX)
 md5sums=('SKIP')
 
 pkgver() {
